@@ -11,14 +11,17 @@
     <main>
       <div>
         <div>
-          <input type="text" />
-          <button>Guess</button>
+          <input id="guess" type="text" />
+          <button id="guessBtn">Guess</button>
         </div>
         <table>
-          <tr>
-            <th>Guess number</th>
-            <th>Hint</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>Guess number</th>
+              <th>Hint</th>
+            </tr>
+          </thead>
+          <tbody id="history"></tbody>
         </table>
       </div>
     </main>
