@@ -9,20 +9,32 @@
   </head>
   <body>
     <main>
-      <div>
+      <div id="scores">
         <div>
+          <p>High Score:</p>
+          <p>Current Score:</p>
+        </div>
+        <div>
+          <p id="highscore">0</p>
+          <p id="score"></p>
+        </div>
+      </div>
+      <div>
+        <div class="inputWrapper">
           <input id="guess" type="text" />
           <button id="guessBtn">Guess</button>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Guess number</th>
-              <th>Hint</th>
-            </tr>
-          </thead>
-          <tbody id="history"></tbody>
-        </table>
+        <div class="historyWrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Guess number</th>
+                <th>Hint</th>
+              </tr>
+            </thead>
+            <tbody id="history"></tbody>
+          </table>
+        </div>
       </div>
     </main>
     <script src="./main.js"></script>
